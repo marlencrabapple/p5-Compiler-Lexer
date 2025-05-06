@@ -4,7 +4,7 @@
       "Masaaki Goshima (goccy) <goccy(at)cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.1.8, CPAN::Meta::Converter version 2.150010",
+   "generated_by" : "Minilla/v3.1.26, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
    ],
@@ -65,7 +65,7 @@
       "homepage" : "https://github.com/goccy/p5-Compiler-Lexer",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/goccy/p5-Compiler-Lexer.git",
+         "url" : "https://github.com/goccy/p5-Compiler-Lexer.git",
          "web" : "https://github.com/goccy/p5-Compiler-Lexer"
       }
    },
@@ -73,6 +73,7 @@
    "x_authority" : "cpan:GOCCY",
    "x_contributors" : [
       "Fumihiro Itoh <fmhrit@gmail.com>",
+      "Ian P Bradley <ian.bradley@studiocrabapple.com>",
       "K <x00.x7f@gmail.com>",
       "Masaaki Goshima <goccy54@gmail.com>",
       "Masaaki Goshima <masaaki.goshima@mixi.co.jp>",
@@ -83,6 +84,6 @@
       "moznion <moznion@gmail.com>",
       "tokuhirom <tokuhirom@gmail.com>"
    ],
-   "x_serialization_backend" : "JSON::PP version 4.04",
+   "x_serialization_backend" : "JSON::PP version 4.16",
    "x_static_install" : 0
 }

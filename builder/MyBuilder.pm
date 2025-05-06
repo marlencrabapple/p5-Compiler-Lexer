@@ -1,13 +1,20 @@
-package builder::MyBuilder;
-use strict;
-use warnings FATAL => 'all';
-use 5.008005;
-use base 'Module::Build::XSUtil';
-use constant DEBUG => 0;
+use Object::Pad ':experimental(:all)';
 
-sub new {
-    my ( $class, %args ) = @_;
-    my @ignore_warnings_options = map { "-Wno-$_" } qw(missing-field-initializers);
+package builder::MyBuilder;
+class builder::MyBuilder :isa(Module::Build::XSUtil);
+
+use utf8;
+use v5.40;
+
+use Const::Fast;
+
+const our $DEBUG => $ENV{DEBUG} // undef;
+
+method $on_new :common (%args) {
+    my @ignore_warnings_options = map { "-Wno-$_" } qw(missing-field-initializers
+                                                       register
+                                                       misleading-indentdation);
+
     my $self = $class->SUPER::new(
         %args,
         generate_ppport_h    => 'include/ppport.h',
@@ -18,11 +25,15 @@ sub new {
         extra_compiler_flags => ['-Iinclude', @ignore_warnings_options, '-g3'],
         add_to_cleanup => [
             'lib/Compiler/Lexer/*.o', 'lib/Compiler/Lexer/*.c',
-            'lib/Compiler/Lexer/*.xs',
-        ],
+            'lib/Compiler/Lexer/*.xs'
+        ]
     );
-    $self->{config}->set('optimize' => '-O0') if (DEBUG);
-    return $self;
+
+    $self->{config}->set('optimize' => '-O0') if $DEBUG;
+    $self
 }
 
-1;
+ADJUSTPARAMS ($params) {
+  $on_new->(__CLASS__, %$params)
+}
+

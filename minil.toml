@@ -1,6 +1,8 @@
 badges = ["travis", "coveralls"]
 authority = "cpan:GOCCY"
 
+#module_maker = "Module::Build"
+
 [build]
 build_class = "builder::MyBuilder"
 
