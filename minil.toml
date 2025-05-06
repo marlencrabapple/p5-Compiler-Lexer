@@ -1,7 +1,7 @@
 badges = ["travis", "coveralls"]
 authority = "cpan:GOCCY"
 
-#module_maker = "Module::Build"
+module_maker = "Module::Maker"
 
 [build]
 build_class = "builder::MyBuilder"
@@ -10,4 +10,4 @@ build_class = "builder::MyBuilder"
 directory = ['t', 'examples', 'builder', 'experiments']
 
 [FileGatherer]
-exclude_match = ['^t/perl/.*', '^example/bigdata.pl', '^experiments/' ]
+exclude_match = ['^t/perl/.*', '^example/bigdata.pl', '^experiments/']

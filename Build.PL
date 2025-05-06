@@ -24,7 +24,7 @@ my %args = (
 
     requires => {
         'XSLoader' => '0.02',
-        'perl' => '5.008001',
+        'perl' => '5.010001',
     },
 
     recommends => {

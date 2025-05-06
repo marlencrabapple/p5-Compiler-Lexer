@@ -1,5 +1,7 @@
 requires 'XSLoader', '0.02';
-requires 'perl', '5.008001';
+requires 'perl', '5.010001';
+requires 'Object::Pad';
+requires 'Module::Build::XSUtil';
 
 on 'configure' => sub {
     requires 'Module::Build::XSUtil' => '>=0.02';

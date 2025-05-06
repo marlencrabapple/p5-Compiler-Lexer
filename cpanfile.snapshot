@@ -1,19 +1,102 @@
 # carton snapshot format: version 1.0
 DISTRIBUTIONS
-  Devel-CheckCompiler-0.02
-    pathname: T/TO/TOKUHIROM/Devel-CheckCompiler-0.02.tar.gz
+  Class-Inspector-1.36
+    pathname: P/PL/PLICEASE/Class-Inspector-1.36.tar.gz
+    provides:
+      Class::Inspector 1.36
+      Class::Inspector::Functions 1.36
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Spec 0.80
+      base 0
+      perl 5.008
+  Devel-CheckCompiler-0.07
+    pathname: S/SY/SYOHEX/Devel-CheckCompiler-0.07.tar.gz
     provides:
       Devel::AssertC99 undef
-      Devel::CheckCompiler 0.02
+      Devel::CheckCompiler 0.07
     requirements:
       Exporter 0
       ExtUtils::CBuilder 0
       File::Temp 0
-      Module::Build 0.38
+      Module::Build::Tiny 0.035
       Test::More 0.98
-      Test::Requires 0
       parent 0
       perl 5.008001
+  ExtUtils-CChecker-0.12
+    pathname: P/PE/PEVANS/ExtUtils-CChecker-0.12.tar.gz
+    provides:
+      ExtUtils::CChecker 0.12
+    requirements:
+      ExtUtils::CBuilder 0
+      Module::Build 0.4004
+      perl 5.014
+  ExtUtils-Config-0.010
+    pathname: L/LE/LEONT/ExtUtils-Config-0.010.tar.gz
+    provides:
+      ExtUtils::Config 0.010
+      ExtUtils::Config::MakeMaker 0.010
+    requirements:
+      Data::Dumper 0
+      ExtUtils::MakeMaker 0
+      ExtUtils::MakeMaker::Config 0
+      perl 5.006
+      strict 0
+      warnings 0
+  ExtUtils-Helpers-0.028
+    pathname: L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz
+    provides:
+      ExtUtils::Helpers 0.028
+      ExtUtils::Helpers::Unix 0.028
+      ExtUtils::Helpers::VMS 0.028
+      ExtUtils::Helpers::Windows 0.028
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Copy 0
+      File::Spec::Functions 0
+      Text::ParseWords 3.24
+      strict 0
+      warnings 0
+  ExtUtils-InstallPaths-0.014
+    pathname: L/LE/LEONT/ExtUtils-InstallPaths-0.014.tar.gz
+    provides:
+      ExtUtils::InstallPaths 0.014
+    requirements:
+      Carp 0
+      ExtUtils::Config 0.009
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      perl 5.008
+      strict 0
+      warnings 0
+  File-ShareDir-1.118
+    pathname: R/RE/REHSACK/File-ShareDir-1.118.tar.gz
+    provides:
+      File::ShareDir 1.118
+    requirements:
+      Carp 0
+      Class::Inspector 1.12
+      ExtUtils::MakeMaker 0
+      File::ShareDir::Install 0.13
+      File::Spec 0.80
+      perl 5.008001
+      warnings 0
+  File-ShareDir-Install-0.14
+    pathname: E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz
+    provides:
+      File::ShareDir::Install 0.14
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      IO::Dir 0
+      perl 5.006
+      strict 0
+      warnings 0
   Module-Build-0.4007
     pathname: L/LE/LEONT/Module-Build-0.4007.tar.gz
     provides:
@@ -69,41 +152,87 @@ DISTRIBUTIONS
       Text::ParseWords 0
       perl 5.006001
       version 0.87
-  Module-Build-XSUtil-0.03
-    pathname: H/HI/HIDEAKIO/Module-Build-XSUtil-0.03.tar.gz
+  Module-Build-Tiny-0.051
+    pathname: L/LE/LEONT/Module-Build-Tiny-0.051.tar.gz
     provides:
-      Module::Build::XSUtil 0.03
+      Module::Build::Tiny 0.051
     requirements:
       CPAN::Meta 0
-      CPAN::Meta::Prereqs 0
-      Devel::CheckCompiler 0.02
-      Devel::PPPort 3.19
+      DynaLoader 0
+      Exporter 5.57
+      ExtUtils::CBuilder 0
+      ExtUtils::Config 0.003
+      ExtUtils::Helpers 0.020
+      ExtUtils::Install 0
+      ExtUtils::InstallPaths 0.002
+      ExtUtils::ParseXS 0
+      File::Basename 0
+      File::Find 0
+      File::Path 0
+      File::Spec::Functions 0
+      Getopt::Long 2.36
+      JSON::PP 2
+      Pod::Man 0
+      TAP::Harness::Env 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Module-Build-XSUtil-0.19
+    pathname: H/HI/HIDEAKIO/Module-Build-XSUtil-0.19.tar.gz
+    provides:
+      Module::Build::XSUtil 0.19
+    requirements:
+      Devel::CheckCompiler 0
+      Devel::PPPort 0
       Exporter 0
       ExtUtils::CBuilder 0
       File::Basename 0
       File::Path 0
       Module::Build 0.4005
-      XSLoader 0.02
+      XSLoader 0
       parent 0
-      perl 5.008005
-  Test-Requires-0.07
-    pathname: T/TO/TOKUHIROM/Test-Requires-0.07.tar.gz
-    provides:
-      Test::Requires 0.07
-    requirements:
-      CPAN::Meta 0
-      CPAN::Meta::Prereqs 0
-      ExtUtils::MakeMaker 6.59
-      Module::Build 0.38
-      Test::Builder::Module 0
-      Test::More 0.61
-      perl 5.008_001
-  YAML-LibYAML-0.41
-    pathname: I/IN/INGY/YAML-LibYAML-0.41.tar.gz
-    provides:
-      YAML::LibYAML 0.18
-      YAML::XS 0.41
-      YAML::XS::LibYAML undef
-    requirements:
-      ExtUtils::MakeMaker 6.59
       perl 5.008001
+  Object-Pad-0.820
+    pathname: P/PE/PEVANS/Object-Pad-0.820.tar.gz
+    provides:
+      Object::Pad 0.820
+      Object::Pad::ExtensionBuilder 0.820
+      Object::Pad::MOP::Class 0.820
+      Object::Pad::MOP::Field 0.820
+      Object::Pad::MOP::FieldAttr 0.820
+      Object::Pad::MOP::Method 0.820
+      Object::Pad::MetaFunctions 0.820
+    requirements:
+      ExtUtils::CBuilder 0
+      File::ShareDir 1.00
+      Module::Build 0.4004
+      XS::Parse::Keyword 0.47
+      XS::Parse::Keyword::Builder 0.48
+      XS::Parse::Sublike 0.35
+      XS::Parse::Sublike::Builder 0.35
+      perl 5.018
+  XS-Parse-Keyword-0.48
+    pathname: P/PE/PEVANS/XS-Parse-Keyword-0.48.tar.gz
+    provides:
+      XS::Parse::Infix 0.48
+      XS::Parse::Infix::Builder 0.48
+      XS::Parse::Keyword 0.48
+      XS::Parse::Keyword::Builder 0.48
+    requirements:
+      ExtUtils::CBuilder 0
+      ExtUtils::CChecker 0.11
+      ExtUtils::ParseXS 3.16
+      File::ShareDir 1.00
+      Module::Build 0.4004
+      perl 5.014
+  XS-Parse-Sublike-0.37
+    pathname: P/PE/PEVANS/XS-Parse-Sublike-0.37.tar.gz
+    provides:
+      Sublike::Extended 0.37
+      XS::Parse::Sublike 0.37
+      XS::Parse::Sublike::Builder 0.37
+    requirements:
+      ExtUtils::CBuilder 0
+      File::ShareDir 1.00
+      Module::Build 0.4004
+      perl 5.016
